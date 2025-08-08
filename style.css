@@ -3,29 +3,33 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #e0f2f7; /* Lighter, subtle teal background */
+    color: #2c3e50; /* Darker text for better contrast */
 }
 
 .container {
-    width: 80%;
+    width: 85%; /* Slightly wider container */
+    max-width: 1200px; /* Max width for large screens */
     margin: auto;
     overflow: hidden;
     padding: 20px 0;
 }
 
 header {
-    background: #333;
+    background: #008080; /* Primary Teal */
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #77aaff 3px solid;
+    padding-top: 20px;
+    min-height: 80px;
+    border-bottom: 5px solid #40B0B0; /* Lighter teal accent border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 header h1 {
     text-align: center;
     margin: 0;
     padding-bottom: 10px;
+    font-size: 2.5em; /* Larger heading */
+    letter-spacing: 1px;
 }
 
 header nav ul {
@@ -35,31 +39,32 @@ header nav ul {
 }
 
 header nav ul li {
-    display: inline-block; /* Changed to inline-block for dropdown positioning */
-    padding: 0 15px;
-    position: relative; /* Added for dropdown positioning */
+    display: inline-block;
+    padding: 0 20px; /* More spacing */
+    position: relative;
 }
 
 header nav a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
-    padding: 10px 0; /* Added padding for better click area */
-    display: block; /* Make the whole link clickable */
+    font-size: 1.1em; /* Slightly larger font */
+    padding: 15px 0;
+    display: block;
+    transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
 header nav a:hover {
-    color: #77aaff;
+    color: #e0f2f7; /* Lighter teal on hover */
     font-weight: bold;
 }
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #333;
+    background-color: #008080; /* Match header background */
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 1.1em;
     border: none;
     cursor: pointer;
 }
@@ -74,26 +79,32 @@ header nav a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1000; /* Increased z-index to ensure it appears on top */
-    left: 50%; /* Center the dropdown */
-    transform: translateX(-50%); /* Center the dropdown */
+    background-color: #fefefe; /* Slightly off-white for dropdown background */
+    min-width: 180px; /* Slightly wider dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3); /* More prominent shadow */
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px; /* Rounded corners for dropdown */
+    overflow: hidden; /* Ensures rounded corners apply to content */
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    color: #333; /* Darker text for dropdown links */
+    padding: 12px 18px; /* More padding */
     text-decoration: none;
     display: block;
     text-align: left;
-    text-transform: none; /* Remove uppercase for dropdown items */
+    text-transform: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #40B0B0; /* Lighter teal on hover */
+    color: white; /* White text on hover */
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -101,39 +112,42 @@ header nav a:hover {
 }
 
 .main-content {
-    padding: 20px;
+    padding: 30px; /* More padding */
     background: #fff;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px; /* More margin */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* More prominent shadow */
 }
 
 .main-content h2 {
-    color: #333;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    color: #008080; /* Teal heading */
+    border-bottom: 2px solid #40B0B0; /* Teal border */
+    padding-bottom: 15px; /* More padding */
+    margin-bottom: 25px;
+    font-size: 2em;
 }
 
 .main-content h3 {
-    color: #555;
-    margin-top: 25px;
+    color: #2c3e50; /* Darker grey for subheadings */
+    margin-top: 30px;
+    font-size: 1.5em;
 }
 
 .main-content ul {
     list-style: disc;
-    margin-left: 20px;
+    margin-left: 25px; /* More margin */
 }
 
 .main-content ul li {
-    margin-bottom: 10px;
+    margin-bottom: 12px; /* More spacing */
 }
 
 footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 25px;
+    margin-top: 40px; /* More margin */
     color: #fff;
-    background-color: #333;
-    border-top: #77aaff 3px solid;
+    background-color: #008080; /* Primary Teal */
+    border-top: 5px solid #40B0B0; /* Lighter teal accent border */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
