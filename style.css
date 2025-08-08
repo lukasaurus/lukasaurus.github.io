@@ -11,7 +11,6 @@ body {
     width: 85%; /* Slightly wider container */
     max-width: 1200px; /* Max width for large screens */
     margin: auto;
-    overflow: hidden;
     padding: 20px 0;
 }
 
